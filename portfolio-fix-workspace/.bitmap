@@ -11,25 +11,25 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
     "brand/logo": {
         "scope": "showoff.design",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "design/brand/logo"
     },
     "inputs/text-field": {
         "scope": "showoff.design",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design/inputs/text-field"
     },
     "layouts/main": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/layouts/main"
     },
@@ -41,61 +41,55 @@
     },
     "navigation/appbar": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appbar"
     },
     "page/contact": {
         "scope": "showoff.contact-me",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "contact-me/page/contact"
     },
     "pages/about": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/about"
     },
     "pages/individual-project": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/individual-project"
     },
     "pages/landing": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing"
     },
     "pages/projects": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/projects"
     },
     "theme/dark-theme": {
         "scope": "showoff.design",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design/theme/dark-theme"
     },
     "theme/fonts": {
-        "scope": "",
-        "version": "",
+        "scope": "showoff.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/theme/fonts",
-        "config": {
-            "teambit.harmony/node": {},
-            "teambit.envs/envs": {
-                "env": "teambit.harmony/node"
-            }
-        }
+        "rootDir": "design/theme/fonts"
     },
     "theme/light-theme": {
         "scope": "showoff.design",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "design/theme/light-theme"
     },
@@ -107,31 +101,31 @@
     },
     "ui/about/history": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/about/history"
     },
     "ui/artwork": {
         "scope": "showoff.contact-me",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "contact-me/ui/artwork"
     },
     "ui/person/artwork": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/artwork"
     },
     "ui/person/picture": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/picture"
     },
     "widgets/work-item": {
         "scope": "showoff.design",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/work-item"
     },
