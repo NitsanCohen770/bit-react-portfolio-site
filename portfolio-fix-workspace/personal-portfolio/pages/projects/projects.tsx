@@ -1,23 +1,15 @@
 import { Margin, MarginType } from '@showoff/design.layouts.margin'
 import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
-import { Box, Grid, Link } from '@mui/material';
+import { Grid, Link } from '@mui/material';
 import React from 'react';
-import { ProjectToggleButton } from '@showoff/personal-portfolio.ui.projects.project-toggle-button'
-import { useCallback } from 'react';
 import { useProjects } from '@showoff/personal-portfolio.hooks.use-projects';
-import { ProjectKind } from '@showoff/personal-portfolio.entities.project';
 import { Card } from '@showoff/design.widgets.card';
 
 export type ProjectsProps = {
 };
 
 export function Projects({ }: ProjectsProps) {
-  const [projectVariety, setProjectVariety] = React.useState<ProjectKind>('component-based');
-  const { projects } = useProjects({ type: projectVariety });
-
-  const handleProjectTypeToggle = useCallback((value: ProjectKind) => {
-    setProjectVariety(value);
-  }, [])
+  const { projects } = useProjects();
 
   return (
     <div>
@@ -26,21 +18,6 @@ export function Projects({ }: ProjectsProps) {
           { crumb: 'projects.' }
         ]}
       />
-      <Margin
-        mt={MarginType.LARGE}
-      >
-        <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Box>
-            <ProjectToggleButton
-              value={projectVariety}
-              onClick={handleProjectTypeToggle}
-            />
-          </Box>
-          <Box>
-
-          </Box>
-        </Box>
-      </Margin>
       <Margin
         mt={MarginType.LARGE}
       >

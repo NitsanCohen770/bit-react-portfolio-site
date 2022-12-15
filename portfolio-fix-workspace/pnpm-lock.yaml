@@ -17,18 +17,17 @@ importers:
       '@showoff/design.theme.theme-creator': 0.0.1
       '@showoff/design.theme.theme-toggle': 0.0.1
       '@showoff/design.widgets.breadcrumb': 0.0.1
+      '@showoff/design.widgets.button': 0.0.1
       '@showoff/design.widgets.card': 0.0.1
       '@showoff/design.widgets.chip': 0.0.1
       '@showoff/design.widgets.heading': 0.0.1
       '@showoff/design.widgets.sizeable-box': 0.0.1
       '@showoff/design.widgets.text-icon': 0.0.1
       '@showoff/design.widgets.typography': 0.0.1
-      '@showoff/personal-portfolio.contexts.settings-context': 0.0.1
       '@showoff/personal-portfolio.entities.project': 0.0.1
       '@showoff/personal-portfolio.hooks.use-project': 0.0.1
-      '@showoff/personal-portfolio.hooks.use-projects': 0.0.1
+      '@showoff/personal-portfolio.mocks.sample-projects': 0.0.1
       '@showoff/personal-portfolio.navigation.appfooter': 0.0.1
-      '@showoff/personal-portfolio.ui.projects.project-toggle-button': 0.0.1
       '@showoff/personal-portfolio.ui.social.icons': 0.0.1
       '@teambit/cloud-providers.deployers.netlify': 0.0.13
       '@teambit/eslint-config-bit-react': ~0.0.367
@@ -68,12 +67,10 @@ importers:
       '@showoff/design.widgets.heading': 0.0.1_gpnovekosfefeqxus3sn34o7la
       '@showoff/design.widgets.sizeable-box': 0.0.1_gpnovekosfefeqxus3sn34o7la
       '@showoff/design.widgets.text-icon': 0.0.1_6u3fm2wt53npy7wlp4iqx3ztui
-      '@showoff/personal-portfolio.contexts.settings-context': 0.0.1_cuf6fvcrkey6ktqfghqvi47tva
       '@showoff/personal-portfolio.entities.project': 0.0.1
       '@showoff/personal-portfolio.hooks.use-project': 0.0.1_sfoxds7t5ydpegc3knd667wn6m
-      '@showoff/personal-portfolio.hooks.use-projects': 0.0.1_sfoxds7t5ydpegc3knd667wn6m
+      '@showoff/personal-portfolio.mocks.sample-projects': 0.0.1
       '@showoff/personal-portfolio.navigation.appfooter': 0.0.1_gpnovekosfefeqxus3sn34o7la
-      '@showoff/personal-portfolio.ui.projects.project-toggle-button': 0.0.1_6u3fm2wt53npy7wlp4iqx3ztui
       '@showoff/personal-portfolio.ui.social.icons': 0.0.1_lmbxj4s537mcelmaf2pa6vfmg4
       '@teambit/cloud-providers.deployers.netlify': 0.0.13_react@17.0.2
       '@teambit/eslint-config-bit-react': registry.npmjs.org/@teambit/eslint-config-bit-react/0.0.367_ila2odovlggsd4ks6hgtkp6zma
@@ -96,6 +93,7 @@ importers:
       '@showoff/design.navigation.footer': 0.0.1_gpnovekosfefeqxus3sn34o7la
       '@showoff/design.navigation.header': 0.0.1_gpnovekosfefeqxus3sn34o7la
       '@showoff/design.theme.theme-toggle': 0.0.1_36ly3ytlgyf3sy2ine2erdeanu
+      '@showoff/design.widgets.button': 0.0.1_vyhdqdqk6hqndii23u6lbmfk7a
       '@showoff/design.widgets.typography': 0.0.1_gpnovekosfefeqxus3sn34o7la
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.20.4
@@ -134,6 +132,12 @@ importers:
     specifiers: {}
 
   personal-portfolio/apps/portfolio:
+    specifiers: {}
+
+  personal-portfolio/contexts/settings-context:
+    specifiers: {}
+
+  personal-portfolio/hooks/use-projects:
     specifiers: {}
 
   personal-portfolio/layouts/main:
@@ -200,30 +204,6 @@ packages:
 
   /@showoff/design.inputs.text-field/0.0.1_gpnovekosfefeqxus3sn34o7la:
     resolution: {integrity: sha1-Z/k6htv7w+rrg06vpQTeEp38g98=, tarball: '@showoff/design.inputs.text-field/-/@showoff-design.inputs.text-field-0.0.1.tgz'}
-    peerDependencies:
-      '@mui/material': '*'
-      '@testing-library/react': '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      '@mui/material':
-        optional: true
-      '@testing-library/react':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@mui/material': registry.npmjs.org/@mui/material/5.11.0_2mete2oe2kozaocyy47tavsz2y
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.5_sfoxds7t5ydpegc3knd667wn6m
-      core-js: registry.npmjs.org/core-js/3.26.1
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  /@showoff/design.inputs.toggle-button/0.0.1_gpnovekosfefeqxus3sn34o7la:
-    resolution: {integrity: sha1-CudaGV5cuNG063QpqKKUEmWCsL4=, tarball: '@showoff/design.inputs.toggle-button/-/@showoff-design.inputs.toggle-button-0.0.1.tgz'}
     peerDependencies:
       '@mui/material': '*'
       '@testing-library/react': '*'
@@ -423,7 +403,6 @@ packages:
       core-js: registry.npmjs.org/core-js/3.26.1
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
 
   /@showoff/design.widgets.card/0.0.1_gpnovekosfefeqxus3sn34o7la:
     resolution: {integrity: sha1-UWJ5/FiXKFYm2n68VV1DpAIb9Ag=, tarball: '@showoff/design.widgets.card/-/@showoff-design.widgets.card-0.0.1.tgz'}
@@ -576,50 +555,12 @@ packages:
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
 
-  /@showoff/personal-portfolio.contexts.settings-context/0.0.1_cuf6fvcrkey6ktqfghqvi47tva:
-    resolution: {integrity: sha1-OvOLwTQhb7Tr19O/qrRtCvgLSVs=, tarball: '@showoff/personal-portfolio.contexts.settings-context/-/@showoff-personal-portfolio.contexts.settings-context-0.0.1.tgz'}
-    peerDependencies:
-      '@testing-library/react': '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      '@testing-library/react':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.5_sfoxds7t5ydpegc3knd667wn6m
-      core-js: registry.npmjs.org/core-js/3.26.1
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
   /@showoff/personal-portfolio.entities.project/0.0.1:
     resolution: {integrity: sha1-B0IhJhi7LsICMDmnxgE/Xv01tJU=, tarball: '@showoff/personal-portfolio.entities.project/-/@showoff-personal-portfolio.entities.project-0.0.1.tgz'}
     dev: false
 
   /@showoff/personal-portfolio.hooks.use-project/0.0.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha1-9iToJs/oGgFfZhtHlKOVN6awwmM=, tarball: '@showoff/personal-portfolio.hooks.use-project/-/@showoff-personal-portfolio.hooks.use-project-0.0.1.tgz'}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@showoff/personal-portfolio.entities.project': 0.0.1
-      '@showoff/personal-portfolio.mocks.sample-projects': 0.0.1
-      core-js: registry.npmjs.org/core-js/3.26.1
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  /@showoff/personal-portfolio.hooks.use-projects/0.0.1_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha1-HvBuZsY2xTi6xyUS6Aj945JVsCw=, tarball: '@showoff/personal-portfolio.hooks.use-projects/-/@showoff-personal-portfolio.hooks.use-projects-0.0.1.tgz'}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -657,35 +598,6 @@ packages:
         optional: true
     dependencies:
       '@showoff/design.navigation.footer': 0.0.1_gpnovekosfefeqxus3sn34o7la
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.5_sfoxds7t5ydpegc3knd667wn6m
-      core-js: registry.npmjs.org/core-js/3.26.1
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    transitivePeerDependencies:
-      - '@mui/material'
-    dev: false
-
-  /@showoff/personal-portfolio.ui.projects.project-toggle-button/0.0.1_6u3fm2wt53npy7wlp4iqx3ztui:
-    resolution: {integrity: sha1-UsqstZTVlKG3FCQSlDgAEbj9MPw=, tarball: '@showoff/personal-portfolio.ui.projects.project-toggle-button/-/@showoff-personal-portfolio.ui.projects.project-toggle-button-0.0.1.tgz'}
-    peerDependencies:
-      '@mui/icons-material': '*'
-      '@testing-library/react': '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      '@mui/icons-material':
-        optional: true
-      '@testing-library/react':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@mui/icons-material': registry.npmjs.org/@mui/icons-material/5.11.0_4wpzcs4ftrfl4u5istg7zqtbna
-      '@showoff/design.inputs.toggle-button': 0.0.1_gpnovekosfefeqxus3sn34o7la
-      '@showoff/design.widgets.text-icon': 0.0.1_6u3fm2wt53npy7wlp4iqx3ztui
-      '@showoff/personal-portfolio.entities.project': 0.0.1
       '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.5_sfoxds7t5ydpegc3knd667wn6m
       core-js: registry.npmjs.org/core-js/3.26.1
       react: registry.npmjs.org/react/17.0.2
@@ -1406,7 +1318,6 @@ packages:
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
       react-is: registry.npmjs.org/react-is/18.2.0
-    dev: false
 
   registry.npmjs.org/@mui/material/5.11.0_2mete2oe2kozaocyy47tavsz2y:
     resolution: {integrity: sha512-8Zl34lb89rLKTTi50Kakki675/LLHMKKnkp8Ee3rAZ2qmisQlRODsGh1MBjENKp0vwhQnNSvlsCfJteVTfotPQ==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/material/-/material-5.11.0.tgz}

@@ -11,7 +11,7 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.12",
+        "version": "0.0.14",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
@@ -21,6 +21,18 @@
         "mainFile": "index.ts",
         "rootDir": "design/brand/logo"
     },
+    "contexts/settings-context": {
+        "scope": "showoff.personal-portfolio",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "personal-portfolio/contexts/settings-context"
+    },
+    "hooks/use-projects": {
+        "scope": "showoff.personal-portfolio",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "personal-portfolio/hooks/use-projects"
+    },
     "inputs/text-field": {
         "scope": "showoff.design",
         "version": "0.0.4",
@@ -29,7 +41,7 @@
     },
     "layouts/main": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.6",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/layouts/main"
     },
@@ -41,37 +53,37 @@
     },
     "navigation/appbar": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.5",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appbar"
     },
     "page/contact": {
         "scope": "showoff.contact-me",
-        "version": "0.0.5",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "contact-me/page/contact"
     },
     "pages/about": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/about"
     },
     "pages/individual-project": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/individual-project"
     },
     "pages/landing": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing"
     },
     "pages/projects": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/projects"
     },
