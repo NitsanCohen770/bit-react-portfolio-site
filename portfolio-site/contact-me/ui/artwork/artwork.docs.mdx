@@ -1,0 +1,25 @@
+---
+description: An Artwork component.
+---
+
+import { Artwork } from './artwork';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { lightTheme } from '@showoff/design.theme.light-theme';
+
+A component that renders the contact artwork based on theme.
+
+### Component usage
+
+Use with `ThemeProvider` to use the correct colors.
+
+```js
+<Artwork />
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Artwork />
+</ThemeProvider>
+```

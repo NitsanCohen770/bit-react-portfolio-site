@@ -1,0 +1,30 @@
+---
+description: A Projects Page Component.
+---
+
+import { Projects } from './projects';
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { lightTheme } from '@showoff/design.theme.light-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A component that renders the project page.
+
+### Component usage
+
+Use with a `ThemeProvider` to apply the styles required.
+
+```js
+<ThemeProvider theme={darkTheme()}>
+  <Projects />
+</ThemeProvider>
+```
+
+### Render a themed project page.
+
+Switch between `darkTheme()` and `lightTheme()` to change the project styling.
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Projects />
+</ThemeProvider>
+```

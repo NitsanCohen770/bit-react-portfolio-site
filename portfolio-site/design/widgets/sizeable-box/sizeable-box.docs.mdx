@@ -1,0 +1,30 @@
+---
+description: A SizeableBox component.
+---
+
+import { SizeableBox } from './sizeable-box';
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { Typography } from '@showoff/design.widgets.typography';
+
+A component that renders a sizeable bordered box.
+
+### Component usage
+
+Use with `ThemeProvider` for styling.
+
+```js
+<SizeableBox size={7}>
+  <Typography>This is a sizeable box</Typography>
+</SizeableBox>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <SizeableBox size={7}>
+    <Typography>This is a sizeable box</Typography>
+  </SizeableBox>
+</ThemeProvider>
+```

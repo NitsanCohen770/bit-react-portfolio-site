@@ -1,0 +1,39 @@
+---
+description: A LinkText component.
+---
+
+import { LinkText } from './link-text';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+
+A component renders an action URL link
+
+### Component usage
+
+Use it with a ThemeProvider to enforce MUI styling
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <LinkText
+    url="https://www.enlear.com"
+    fontSize={22}
+    iconSize="medium"
+    fontWeight={400}
+    linkText="Hello, Link Text"
+  />
+</ThemeProvider>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <LinkText
+    url="https://www.enlear.com"
+    fontSize={22}
+    iconSize="medium"
+    fontWeight={400}
+    linkText="Hello, Link Text"
+  />
+</ThemeProvider>
+```

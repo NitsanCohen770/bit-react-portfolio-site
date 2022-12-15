@@ -1,0 +1,78 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "portfolio-fix-workspace",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{scope}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "showoff.design"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@teambit/cloud-providers.deployers.netlify": "0.0.13",
+        "@teambit/eslint-config-bit-react": "~0.0.367",
+        "@teambit/people.ui.social-links": "0.0.6",
+        "@typescript-eslint/eslint-plugin": "4.29.3",
+        "eslint-import-resolver-node": "0.3.6",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-jest": "24.4.0",
+        "eslint-plugin-jsx-a11y": "6.4.1",
+        "eslint-plugin-mdx": "1.15.0",
+        "eslint-plugin-react": "7.25.1"
+      },
+      "peerDependencies": {
+        "@emotion/react": "11.10.5",
+        "@emotion/styled": "11.10.5",
+        "@mui/icons-material": "5.11.0",
+        "@mui/lab": "5.0.0-alpha.112",
+        "@mui/material": "5.11.0",
+        "@testing-library/react": "^12.1.5",
+        "formik": "2.2.9",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-router-dom": "6.4.4",
+        "yup": "0.32.11"
+      }
+    },
+    "linkCoreAspects": true
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your
+   * workspace. this is extremely useful for upgrading, aligning and building components with a new
+   * set of dependencies. a rule can be a directory or a component-id/namespace, in which case,
+   * wrap the rule with curly brackets (e.g. `"{ui/*}": {}`)
+   * see https://bit.dev/docs/workspace/variants for more info.
+   **/
+  "teambit.workspace/variants": {},
+  "showoff.personal-portfolio/apps/portfolio": {}
+}

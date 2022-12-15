@@ -1,0 +1,25 @@
+---
+description: A Contact Page component.
+---
+
+import { Contact } from './contact';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+
+A component that renders a contact us page.
+
+### Component usage
+
+Use with `ThemeProvider` to apply themes.
+
+```js
+<Contact />
+```
+
+### Render the contact us page on light theme.
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Contact />
+</ThemeProvider>
+```

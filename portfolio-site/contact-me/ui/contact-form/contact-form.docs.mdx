@@ -1,0 +1,26 @@
+---
+description: A ContactForm component.
+---
+
+import { ContactForm } from './contact-form';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { lightTheme } from '@showoff/design.theme.light-theme';
+
+A component renders a contact form
+Use with `ThemeProvider` to apply relevant stylings
+
+### Component usage
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <ContactForm onSubmit={handleSubmit} />
+</ThemeProvider>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <ContactForm onSubmit={(values) => console.log(values)} />
+</ThemeProvider>
+```

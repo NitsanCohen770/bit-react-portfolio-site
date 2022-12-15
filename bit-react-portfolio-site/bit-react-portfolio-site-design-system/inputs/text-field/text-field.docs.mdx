@@ -1,0 +1,27 @@
+---
+description: A TextField component.
+---
+
+import { TextField } from './text-field';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that provides an implementation of an MUI text field
+
+### Component usage
+
+Use with a `ThemeProvider` to apply custom themes. For a full list of props, refer to the MUI documentation for the `TextField` Props
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <TextField label="Basic Text Field" />
+</ThemeProvider>
+```
+
+### Render a basic text field component
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <TextField fullWidth label="Basic Text Field" />
+</ThemeProvider>
+```

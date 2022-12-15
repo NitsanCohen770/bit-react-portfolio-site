@@ -1,0 +1,27 @@
+---
+description: A Button component.
+labels: ['UI', 'Button', 'Widget']
+---
+
+import { Button } from './button';
+import { darkTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.dark-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a button component.
+Use with `ThemeProvider`
+
+### Component usage
+
+```js
+<ThemeProvider theme={darkTheme()}>
+  <Button value="Dark Button" />
+</ThemeProvider>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Button value="Dark Button" />
+</ThemeProvider>
+```

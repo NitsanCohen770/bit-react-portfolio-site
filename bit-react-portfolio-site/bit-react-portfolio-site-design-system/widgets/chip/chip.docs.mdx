@@ -1,0 +1,34 @@
+---
+description: A Chip component.
+---
+
+import { Chip } from './chip';
+import { darkTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.dark-theme';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a chip with a variation from MUI
+
+### Component usage
+
+```js
+<ThemeProvider theme={darkTheme()}>
+  <Chip content="Dark Chip" />
+</ThemeProvider>
+```
+
+### Render a chip using a Dark Theme
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Chip content="Dark Chip" />
+</ThemeProvider>
+```
+
+### Render a chip using a Light Theme
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Chip content="Light Chip" />
+</ThemeProvider>
+```

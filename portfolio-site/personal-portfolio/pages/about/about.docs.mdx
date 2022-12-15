@@ -1,0 +1,28 @@
+---
+description: A About component.
+---
+
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { Main } from '@showoff/personal-portfolio.layouts.main';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { About } from './about';
+
+A component that renders an About Me Page
+
+### Component usage
+
+Use with a `ThemeProvider` for styling.
+
+```js
+<About />
+```
+
+### Rendering the About Us page.
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Main>
+    <About />
+  </Main>
+</ThemeProvider>
+```

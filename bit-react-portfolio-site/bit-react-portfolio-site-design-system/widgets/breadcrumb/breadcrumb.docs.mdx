@@ -1,0 +1,45 @@
+---
+description: A Breadcrumb component.
+---
+
+import { Breadcrumb } from './breadcrumb';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a breadcrumb to display the stream of routes.
+
+### Component usage
+
+It is encouraged to wrap this with a `ThemeProvider` to enforce theming.
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <Breadcrumb
+    typographyProps={{
+      fontSize: 30,
+    }}
+    crumbs={[
+      { crumb: 'Home', link: '/' },
+      { crumb: 'Components' },
+      { crumb: 'Breadcrumb', link: '/component/breadcrumb' },
+    ]}
+  />
+</ThemeProvider>
+```
+
+### Render a sample breadcrumb
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Breadcrumb
+    typographyProps={{
+      fontSize: 30,
+    }}
+    crumbs={[
+      { crumb: 'Home', link: '/' },
+      { crumb: 'Components' },
+      { crumb: 'Breadcrumb', link: '/component/breadcrumb' },
+    ]}
+  />
+</ThemeProvider>
+```

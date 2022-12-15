@@ -1,0 +1,35 @@
+---
+description: A SettingsContext context component.
+---
+
+import { SettingsProvider, SettingsConsumer } from './settings-context';
+import { darkTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.dark-theme';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+import { Button } from '@enlear/bit-react-portfolio-site-design-system.widgets.button';
+import { Heading } from '@enlear/bit-react-portfolio-site-design-system.widgets.heading';
+
+A context component to provides the app preferences.
+
+### Component usage
+
+```js
+<SettingsProvider>
+  <SettingsConsumer>{({ theme, toggleTheme }) => <></>}</SettingsConsumer>
+</SettingsProvider>
+```
+
+### Render settings context
+
+```js live
+<SettingsProvider>
+  <SettingsConsumer>
+    {({ theme, toggleTheme }) => (
+      <ThemeProvider theme={theme === 'dark' ? darkTheme() : lightTheme()}>
+        <Heading value={'Settings Context'} />
+        <Button value={'Toggle Theme'} onClick={toggleTheme} />
+      </ThemeProvider>
+    )}
+  </SettingsConsumer>
+</SettingsProvider>
+```

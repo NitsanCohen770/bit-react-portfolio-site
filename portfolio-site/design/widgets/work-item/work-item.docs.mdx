@@ -1,0 +1,34 @@
+---
+description: A WorkItem component.
+---
+
+import { WorkItem } from './work-item';
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A component that renders a work experience item.
+Use with a `ThemeProvider` to enable theme based styling.
+
+### Component usage
+
+```js
+<WorkItem
+  company="Company"
+  designation="Designation"
+  period="Period"
+  size={7}
+/>
+```
+
+### Render sample work item with theme
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <WorkItem
+    company="Company"
+    designation="Designation"
+    period="Period"
+    size={7}
+  />
+</ThemeProvider>
+```

@@ -1,0 +1,57 @@
+---
+description: A Main Layout omponent.
+labels: ['Layout']
+---
+
+import { Main } from './main';
+import { Footer } from '@showoff/design.navigation.footer';
+import { Header } from '@showoff/design.navigation.header';
+import { lightTheme } from '@showoff/design.theme.light-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { ThemeToggle } from '@showoff/design.theme.theme-toggle';
+import { Logo } from '@showoff/design.brand.logo';
+import { Typography } from '@showoff/design.widgets.typography';
+
+A component that acts as a layout component and positions the header, footer and content.
+
+### Component usage
+
+```js
+<Main header={<></>} footer={<></>}>
+  {children}
+</Main>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Main
+    footer={
+      <Footer
+        rightContent="© 2022 Enlear. All Rights Reserved."
+        leftContent="Made with ❤️ by Enlear"
+      />
+    }
+    header={
+      <Header
+        logo={<Logo />}
+        navLinks={[
+          { label: 'Home', url: '/' },
+          { label: 'About', url: '/about' },
+          { label: 'Contact', url: '/contact' },
+        ]}
+        darkToggleButton={
+          <ThemeToggle
+            isDark={true}
+            onClick={() => alert('Turn Dark Off')}
+            size="small"
+          />
+        }
+      />
+    }
+  >
+    <Typography variant="h1">Hello World</Typography>
+  </Main>
+</ThemeProvider>
+```

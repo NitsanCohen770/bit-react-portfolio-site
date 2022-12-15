@@ -1,0 +1,27 @@
+---
+labels: ['entity', 'project']
+description: 'A Project entity'
+---
+
+import { Project } from './project';
+
+The entity component creates an in-memory representation of a project.
+
+## Live Playground
+
+Change the values in the project object to see it render in live.
+
+```tsx live
+() => {
+  const project = new Project({
+    id: '1',
+    name: 'React Project',
+    description: 'My first react project',
+    tags: ['react', 'javascript'],
+    type: 'react',
+    image: 'https://bit.dev/bit/envs/compilers/react/~code',
+    links: {},
+  });
+  return <div>{project.name}</div>;
+};
+```

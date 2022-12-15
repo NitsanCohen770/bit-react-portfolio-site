@@ -1,0 +1,27 @@
+---
+description: A Typography component.
+---
+
+import { Typography } from './typography';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that does abstracts MUI Typography
+
+### Component usage
+
+Use with a ThemeProvider
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <Typography>hello world!</Typography>
+</ThemeProvider>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Typography>hello world!</Typography>
+</ThemeProvider>
+```

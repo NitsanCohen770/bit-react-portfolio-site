@@ -1,0 +1,30 @@
+---
+description: A Projects Page Component.
+---
+
+import { Projects } from './projects';
+import { darkTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.dark-theme';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders the project page.
+
+### Component usage
+
+Use with a `ThemeProvider` to apply the styles required.
+
+```js
+<ThemeProvider theme={darkTheme()}>
+  <Projects />
+</ThemeProvider>
+```
+
+### Render a themed project page.
+
+Switch between `darkTheme()` and `lightTheme()` to change the project styling.
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Projects />
+</ThemeProvider>
+```

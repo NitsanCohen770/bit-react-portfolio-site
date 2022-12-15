@@ -1,0 +1,8 @@
+{
+  "extends": "./node_modules/@teambit/react/typescript/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "typeRoots": ["node_modules/@types", "./types"]
+  },
+  "exclude": ["dist"]
+}

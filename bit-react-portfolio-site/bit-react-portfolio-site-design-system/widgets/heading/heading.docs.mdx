@@ -1,0 +1,26 @@
+---
+description: A Heading component.
+labels: ['Typography']
+---
+
+import { Heading } from './heading';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a heading.
+
+### Component usage
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <Heading value="Testing Typography" />
+</ThemeProvider>
+```
+
+### Render the heading.
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Heading value="Testing Typography" />
+</ThemeProvider>
+```

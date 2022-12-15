@@ -1,0 +1,26 @@
+---
+description: A Appbar component.
+labels: ['navigation']
+---
+
+import { Appbar } from './appbar';
+import { darkTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.dark-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component renders an app bar (navigation bar) for the portfolio
+
+### Component usage
+
+Use with `ThemeProvider` for a theme object.
+
+```js
+<Appbar />
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Appbar />
+</ThemeProvider>
+```

@@ -1,0 +1,25 @@
+---
+description: A Landing page component.
+---
+
+import { Landing } from './landing';
+import { darkTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.dark-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a Landing page component
+
+### Component usage
+
+Use with a `ThemeProvider` to render with theme
+
+```js
+<Landing />
+```
+
+### Render dark landing page
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Landing />
+</ThemeProvider>
+```

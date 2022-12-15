@@ -1,0 +1,23 @@
+---
+description: A Logo component.
+---
+
+import { Logo } from './logo';
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A logo component that changes color based on Theme. Hence, to be used with `ThemeProvider`
+
+### Component usage
+
+```js
+<Logo />
+```
+
+### Render dark logo
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Logo />
+</ThemeProvider>
+```

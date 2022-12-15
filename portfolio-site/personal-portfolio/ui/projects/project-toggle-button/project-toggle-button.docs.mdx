@@ -1,0 +1,27 @@
+---
+description: A ProjectToggleButton component.
+---
+
+import { ProjectToggleButton } from './project-toggle-button';
+import { lightTheme } from '@showoff/design.theme.light-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A component that renders the toggle button needed to toggle projects
+
+Use with a `ThemeProvider` to enforce styling based on template.
+
+### Component usage
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <ProjectToggleButton onClick={(value) => console.log(value)} />
+</ThemeProvider>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <ProjectToggleButton onClick={(value) => console.log(value)} />
+</ThemeProvider>
+```

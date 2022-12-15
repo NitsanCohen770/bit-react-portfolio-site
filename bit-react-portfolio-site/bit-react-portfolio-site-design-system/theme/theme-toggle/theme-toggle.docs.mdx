@@ -1,0 +1,25 @@
+---
+description: A ThemeToggle component.
+---
+
+import { ThemeToggle } from './theme-toggle';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a toggle that allows to switch between dark and light mode.
+
+### Component usage
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <ToggleButton isDark={false} onClick={() => alert('Toggle')} />
+</ThemeProvider>
+```
+
+### Render sample toggle button
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <ToggleButton isDark={false} onClick={() => alert('Toggle')} />
+</ThemeProvider>
+```

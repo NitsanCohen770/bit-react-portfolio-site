@@ -1,0 +1,50 @@
+---
+description: A IndividualProject Page component.
+---
+
+import { IndividualProject } from './individual-project';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+import { Main } from '@enlear/bit-react-portfolio-site.layouts.main';
+import { Routes } from 'react-router-dom';
+import { MemoryRouter, Route } from 'react-router-dom';
+
+A page component that renders information about a single project
+
+### Component usage
+
+Since this is a page level component, use it with a router and a theme provider to enforce theming.
+It expected `react-router-dom` as there is a hook `useParams` that fetched the id passed from path params to render the object.
+Path param = `id`
+
+```js
+<ThemeProvider theme={darkTheme()}>
+  <Main>
+    <MemoryRouter
+      initialEntries={[{ pathname: '/projects/1' }]}
+      initialIndex={0}
+    >
+      <Routes>
+        <Route path="/projects/:id" element={<IndividualProject />}></Route>
+      </Routes>
+    </MemoryRouter>
+  </Main>
+</ThemeProvider>
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Main>
+    <MemoryRouter
+      initialEntries={[{ pathname: '/projects/1' }]}
+      initialIndex={0}
+    >
+      <Routes>
+        <Route path="/projects/:id" element={<IndividualProject />}></Route>
+      </Routes>
+    </MemoryRouter>
+  </Main>
+</ThemeProvider>
+```

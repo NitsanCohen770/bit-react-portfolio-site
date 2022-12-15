@@ -1,0 +1,31 @@
+---
+description: A Footer component.
+---
+
+import { Footer } from './footer';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders a footer component
+
+### Component usage
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <Footer
+    leftContent={'Thanks for Visiting.'}
+    rightContent={'© 2022 Ober. All Rights Reserved.'}
+  />
+</ThemeProvider>
+```
+
+### Render sample footer
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Footer
+    leftContent={'Thanks for Visiting.'}
+    rightContent={'© 2022 Ober. All Rights Reserved.'}
+  />
+</ThemeProvider>
+```

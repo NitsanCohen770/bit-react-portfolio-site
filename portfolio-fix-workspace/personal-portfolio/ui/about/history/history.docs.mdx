@@ -1,0 +1,25 @@
+---
+description: A History component.
+---
+
+import { History } from './history';
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A component that does renders the work history of a person
+
+### Component usage
+
+Use with `ThemeProvider` for styling
+
+```js
+<History />
+```
+
+### Render sample history
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <History />
+</ThemeProvider>
+```

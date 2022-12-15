@@ -1,0 +1,25 @@
+---
+description: An Artwork component.
+---
+
+import { Artwork } from './artwork';
+import { lightTheme } from '@showoff/design.theme.light-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A component that renders an artwork for the Landing Page
+
+### Component usage
+
+Use with `ThemeProvider` to add colors via Theme
+
+```js
+<Artwork>Hello world!</Artwork>
+```
+
+### Render light artwork
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Artwork />
+</ThemeProvider>
+```

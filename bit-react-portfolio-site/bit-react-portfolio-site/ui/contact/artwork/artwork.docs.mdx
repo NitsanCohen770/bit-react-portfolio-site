@@ -1,0 +1,25 @@
+---
+description: An Artwork component.
+---
+
+import { Artwork } from './artwork';
+import { lightTheme } from '@enlear/bit-react-portfolio-site-design-system.theme.light-theme';
+import { ThemeProvider } from '@enlear/bit-react-portfolio-site-design-system.theme.theme-provider';
+
+A component that renders the contact artwork based on theme.
+
+### Component usage
+
+Use with `ThemeProvider` to use the correct colors.
+
+```js
+<Artwork />
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Artwork />
+</ThemeProvider>
+```
